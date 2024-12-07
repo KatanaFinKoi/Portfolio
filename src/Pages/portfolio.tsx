@@ -1,4 +1,4 @@
-const portfolio = () => {
+const Portfolio = () => {
     return (
         <div>
             <h3>Portfolio</h3>
@@ -6,4 +6,4 @@ const portfolio = () => {
     );
 }
 
-export default portfolio;
+export default Portfolio;
