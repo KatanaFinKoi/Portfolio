@@ -1,6 +1,24 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
-const navigate = useNavigate();
+// const navigate = useNavigate();
+
+// const Header = () => {
+//   return (
+//   <div>
+//     <h1>
+//       Liam Rayback
+//     </h1>
+//     <nav>
+//       <ul>
+//         <li onClick={() => navigate("/aboutMe")}>About Me</li>
+//         <li onClick={() => navigate("/portfolio")}>Portfolio</li>
+//         <li onClick={() => navigate("/contact")}>Contact</li>
+//         <li onClick={() => navigate("/resume")}>Resume</li>
+//       </ul>
+//     </nav>
+//   </div>
+//   );
+// }
 
 const Header = () => {
   return (
@@ -10,10 +28,10 @@ const Header = () => {
     </h1>
     <nav>
       <ul>
-        <li onClick={() => navigate("/aboutMe")}>About Me</li>
-        <li onClick={() => navigate("/portfolio")}>Portfolio</li>
-        <li onClick={() => navigate("/contact")}>Contact</li>
-        <li onClick={() => navigate("/resume")}>Resume</li>
+        <li>About Me</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+        <li>Resume</li>
       </ul>
     </nav>
   </div>
