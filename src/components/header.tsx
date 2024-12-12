@@ -8,14 +8,12 @@
 //     <h1>
 //       Liam Rayback
 //     </h1>
-//     <nav>
-//       <ul>
-//         <li onClick={() => navigate("/aboutMe")}>About Me</li>
-//         <li onClick={() => navigate("/portfolio")}>Portfolio</li>
-//         <li onClick={() => navigate("/contact")}>Contact</li>
-//         <li onClick={() => navigate("/resume")}>Resume</li>
-//       </ul>
-//     </nav>
+//     <div>
+//       <button onClick={() => navigate("/aboutMe")}>About Me</button>
+//       <button onClick={() => navigate("/portfolio")}>Portfolio</button>
+//       <button onClick={() => navigate("/contact")}>Contact</button>
+//       <button onClick={() => navigate("/resume")}>Resume</button>
+//     </div>
 //   </div>
 //   );
 // }
@@ -26,14 +24,12 @@ const Header = () => {
     <h1>
       Liam Rayback
     </h1>
-    <nav>
       <ul>
         <li>About Me</li>
         <li>Portfolio</li>
         <li>Contact</li>
         <li>Resume</li>
       </ul>
-    </nav>
   </div>
   );
 }
