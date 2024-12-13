@@ -9,6 +9,7 @@ const Header = () => {
     <h1>
       Liam Rayback
     </h1>
+    <img src="src/images/liam-digital-portrait.jpeg" alt="Liam Rayback artistic portrait" />
     <div>
       <button onClick={() => navigate("/aboutMe")}>About Me</button>
       <button onClick={() => navigate("/portfolio")}>Portfolio</button>
