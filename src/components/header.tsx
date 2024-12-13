@@ -19,20 +19,4 @@ const Header = () => {
   );
 }
 
-// const Header = () => {
-//   return (
-//   <div>
-//     <h1>
-//       Liam Rayback
-//     </h1>
-//       <ul>
-//         <li>About Me</li>
-//         <li>Portfolio</li>
-//         <li>Contact</li>
-//         <li>Resume</li>
-//       </ul>
-//   </div>
-//   );
-// }
-
 export default Header; 

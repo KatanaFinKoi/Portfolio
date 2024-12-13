@@ -5,8 +5,7 @@ import AboutMe from './Pages/aboutMe'
 import Contact from './Pages/contact'
 import Portfolio from './Pages/portfolio'
 import Resume from './Pages/resume'
-
-import './App.css'
+import 'App.css'
 
 function App() {
   return (
