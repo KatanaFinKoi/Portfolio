@@ -1,21 +1,25 @@
 const Footer = () => {
     return (
         <footer>
-            <img 
-            className = "footer-logo"
-            src = "src/images/github-logo-6532.png" 
-            alt = "github logo"
+            <a className = "footer-logo" 
             onClick={() => window.open('https://github.com/KatanaFinKoi', '_blank')}
             >
-            </img>
+                <img             
+                src = "src/images/github-logo-6532.png" 
+                alt = "github logo"
+                >
+                </img>
+            </a>
             
-            <img 
-            className = "footer-logo"
-            src = "src/images/icons8-linkedin-192.png" 
-            alt = "linkedin logo"
+            <a className = "footer-logo" 
             onClick={() => window.open('https://www.linkedin.com/in/liam-rayback', '_blank')}
             >
-            </img>
+                <img 
+                src = "src/images/icons8-linkedin-192.png" 
+                alt = "linkedin logo"
+                >
+                </img>
+            </a>
         </footer>
     );
 }
