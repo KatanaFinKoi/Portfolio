@@ -2,6 +2,8 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0 auto;
+  padding: 0;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -24,9 +26,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -54,6 +53,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.pages {
+  text-align: left;
+  padding: 0 100px 0 100px;
+}
+
 .footer-logo img {
   cursor: pointer; 
   transition: transform 0.2s, box-shadow 0.2s; 
@@ -64,6 +68,38 @@ button:focus-visible {
 .footer-logo img:hover {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  margin: 0 auto;
+  padding: 100px 25px;
+  background-color: #c291ff;
+  display: flex;
+}
+
+h1 {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.portrait {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 7px solid #000000;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 50px 25px;
+  background-color: #c291ff;
+  display: flex;
+  justify-content: center;
 }
 
 

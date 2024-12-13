@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer>
+        <footer className = "footer">
             <a className = "footer-logo" 
             onClick={() => window.open('https://github.com/KatanaFinKoi', '_blank')}
             >

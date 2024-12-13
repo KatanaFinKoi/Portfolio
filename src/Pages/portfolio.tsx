@@ -1,9 +1,18 @@
 const Portfolio = () => {
     return (
-        <div>
+        <div className = "pages">
             <h3>Portfolio</h3>
             <div>
-                <h4>Vinyl Vault</h4>
+                    {/* <img src = "src/images/Vinyl-Vault-screenshot.png" alt = "Vinyl Vault screenshot" className = "portfolio-screenshot">
+                        <a className = "portfolio-links">
+                            <button 
+                            className = "github-link"
+                            onClick={() => window.open('https://github.com/KatanaFinKoi/Vinyl-Vault', '_blank')}
+                            >
+                            GitHub
+                            </button>
+                        </a>
+                    </img> */}
             </div>
             <div>
                 <h4>Dead By Daylight</h4>

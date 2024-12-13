@@ -1,9 +1,10 @@
 const AboutMe = () => {
     return (
-        <div>
+        <div className = "pages">
             <h3>
                 About Me
             </h3>
+            <img src="src/images/liam-digital-portrait.jpeg" alt="Liam Rayback artistic portrait" className = "portrait"/>
             <p>
             A dedicated student at a software development bootcamp, with a diverse background in childcare, reception, retail, 
             newspaper delivery, customer service, and IT internships. This range of roles has fostered adaptability, problem-solving, 
