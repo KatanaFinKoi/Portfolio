@@ -14,6 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true, // Default page
+        path: "/aboutMe",
         element: <AboutMe />
       },
       {

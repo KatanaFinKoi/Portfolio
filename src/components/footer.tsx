@@ -13,7 +13,7 @@ const Footer = () => {
             className = "footer-logo"
             src = "src/images/icons8-linkedin-192.png" 
             alt = "linkedin logo"
-            onClick={() => window.open('www.linkedin.com/in/liam-rayback', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/liam-rayback', '_blank')}
             >
             </img>
         </footer>
