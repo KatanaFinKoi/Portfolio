@@ -1,5 +1,5 @@
-import Footer from './components/Footer'
-import Navigation from './components/Header'
+import Footer from './components/footer'
+import Navigation from './components/header'
 import { Routes, Route } from 'react-router-dom'
 import AboutMe from './Pages/aboutMe'
 import Contact from './Pages/contact'
