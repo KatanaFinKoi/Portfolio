@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Header = () => {
+const Navigation = () => {
   const navigate = useNavigate();
   return (
   <div className = "header">
@@ -19,4 +19,4 @@ const Header = () => {
   );
 }
 
-export default Header; 
+export default Navigation; 

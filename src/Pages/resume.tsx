@@ -1,6 +1,6 @@
 const Resume = () => {
     return (
-        <div className = "pages">
+        <div className = "resume-page">
             <div>
                 <h3>Resume</h3>
             </div>
@@ -29,6 +29,9 @@ const Resume = () => {
                     <li>Photoshop</li>
                     <li>Gimp</li>
                 </ol>
+            </div>
+            <div>
+                <a className = "resume-link" href="https://docs.google.com/document/d/17l0d5-J0_HpLV334MfrZXLaSIqSylvKw9eUz8eV4-Gw/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Link to full resume</a>
             </div>
         </div>
     );

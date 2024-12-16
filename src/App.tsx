@@ -1,5 +1,5 @@
 import Footer from './components/Footer'
-import Header from './components/Header'
+import Navigation from './components/Header'
 import { Routes, Route } from 'react-router-dom'
 import AboutMe from './Pages/aboutMe'
 import Contact from './Pages/contact'
@@ -10,7 +10,7 @@ import './index.css'
 function App() {
   return (
     <div>
-      <Header />
+      <Navigation />
       <Routes>
         <Route index element={<AboutMe />} />
         <Route path="/aboutMe" element={<AboutMe />} />
