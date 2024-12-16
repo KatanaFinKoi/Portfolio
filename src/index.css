@@ -30,13 +30,34 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 60px;
   line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -46,16 +67,16 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ff0000;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto #c290ff;
 }
 
 .pages {
   text-align: left;
-  padding: 0 100px 0 100px;
+  padding: 0 150px 0 150px;
 }
 
 .footer-logo img {
@@ -74,11 +95,9 @@ button:focus-visible {
   margin: 0 auto;
   padding: 100px 25px;
   background-color: #c291ff;
+  background-image: url(src/images/purple-banner.jpg);
+  background-size: cover;
   display: flex;
-}
-
-h1 {
-  margin: 0;
 }
 
 .nav {
@@ -98,9 +117,71 @@ h1 {
   margin: 0 auto;
   padding: 50px 25px;
   background-color: #c291ff;
+  background-image: url(src/images/purple-banner.jpg);
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
+
+
+
+/* Container for all projects */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 0px; /* Space between projects */
+  padding: 0px;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding: 50px 0;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+/* Keep each project (title, image, and links) grouped together */
+.vinyl-vault {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 1;
+  grid-row: 2;
+  padding: 0 0 50px 0;
+}
+
+.dead-by-daylight {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 2;
+  grid-row: 2;
+  padding: 0 0 50px 0;
+}
+
+.mark-warner {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 3;
+  grid-row: 2;
+  padding: 0 0 50px 0;
+}
+
+.github-link,
+.deployed-link {
+  cursor: pointer;
+}
+
+.github-link:hover,
+.deployed-link:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+}
+
+
+
 
 
 @media (prefers-color-scheme: light) {
