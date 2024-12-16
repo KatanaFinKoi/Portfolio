@@ -1,10 +1,10 @@
-import Footer from './components/Footer.tsx'
-import Navigation from './components/Header.tsx'
+import Footer from './components/Footer'
+import Navigation from './components/Header'
 import { Routes, Route } from 'react-router-dom'
-import AboutMe from './Pages/aboutMe.tsx'
-import Contact from './Pages/contact.tsx'
-import Portfolio from './Pages/portfolio.tsx'
-import Resume from './Pages/resume.tsx'
+import AboutMe from './Pages/aboutMe'
+import Contact from './Pages/contact'
+import Portfolio from './Pages/portfolio'
+import Resume from './Pages/resume'
 import './index.css'
 
 function App() {
