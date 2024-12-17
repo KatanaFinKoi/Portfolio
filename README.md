@@ -2,6 +2,8 @@
 
 Welcome to my portfolio project! This is a comprehensive showcase of my work, skills, and professional background. The project highlights my coding expertise, creative problem-solving, and ability to bring ideas to life.
 
+**This portfolio can be found live at:** https://liam-rayback-portfolio.netlify.app/ 
+
 ---
 
 ## **Table of Contents**
