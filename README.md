@@ -17,13 +17,13 @@ Welcome to my portfolio project! This is a comprehensive showcase of my work, sk
 
 ## **Preview**
 
-![About me page](src/images/screenshot-about-me.png)
+![About me page](/screenshot-about-me.png)
 
-![Portfolio](src/images/screenshot-portfolio.png)
+![Portfolio](/screenshot-portfolio.png)
 
-![Contact](src/images/screenshot-contact.png)
+![Contact](/screenshot-contact.png)
 
-![Resume](src/images/screenshot-resume.png)
+![Resume](public/screenshot-resume.png)
 
 ---
 
