@@ -1,3 +1,4 @@
+
 const Footer = () => {
     return (
         <footer className = "footer">
@@ -5,7 +6,7 @@ const Footer = () => {
             onClick={() => window.open('https://github.com/KatanaFinKoi', '_blank')}
             >
                 <img             
-                src = "src/images/github-logo-6532.png" 
+                src = "/github-logo-6532.png" 
                 alt = "github logo"
                 >
                 </img>
@@ -15,7 +16,7 @@ const Footer = () => {
             onClick={() => window.open('https://www.linkedin.com/in/liam-rayback', '_blank')}
             >
                 <img 
-                src = "src/images/icons8-linkedin-192.png" 
+                src = "/icons8-linkedin-192.png" 
                 alt = "linkedin logo"
                 >
                 </img>

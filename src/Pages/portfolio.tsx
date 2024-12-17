@@ -7,7 +7,7 @@ const Portfolio = () => {
                 <div
                     className="portfolio-screenshot"
                     style={{
-                        backgroundImage: `url('src/images/Vinyl-Vault-screenshot.png')`,
+                        backgroundImage: `url('/Vinyl-Vault-screenshot.png')`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         width: '400px', // Adjust dimensions as needed
@@ -49,7 +49,7 @@ const Portfolio = () => {
                 <div
                     className="portfolio-screenshot"
                     style={{
-                        backgroundImage: `url('src/images/Dead-by-Daylight-screenshot.png')`,
+                        backgroundImage: `url('/Dead-by-Daylight-screenshot.png')`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         width: '400px', // Adjust dimensions as needed
@@ -90,7 +90,7 @@ const Portfolio = () => {
                 <div
                     className="portfolio-screenshot"
                     style={{
-                        backgroundImage: `url('src/images/Mark-Warner-screenshot.png')`,
+                        backgroundImage: `url('/Mark-Warner-screenshot.png')`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         width: '400px', // Adjust dimensions as needed

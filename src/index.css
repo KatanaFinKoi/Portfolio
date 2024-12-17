@@ -132,7 +132,7 @@ button:focus-visible {
   margin: 0 auto;
   padding: 100px 25px;
   background-color: #c291ff;
-  background-image: url(src/images/purple-banner.jpg);
+  background-image: url(/purple-banner.jpg);
   background-size: cover;
   display: flex;
 }
@@ -154,7 +154,7 @@ button:focus-visible {
   margin: 0 auto;
   padding: 50px 25px;
   background-color: #c291ff;
-  background-image: url(src/images/purple-banner.jpg);
+  background-image: url(/purple-banner.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
