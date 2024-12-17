@@ -26,8 +26,7 @@ const Resume = () => {
                     <li>Insomnia</li>
                     <li>Computer terminal</li>
                     <li>Firebase</li>
-                    <li>Photoshop</li>
-                    <li>Gimp</li>
+                    <li>Image editing software</li>
                 </ol>
             </div>
             <div>
