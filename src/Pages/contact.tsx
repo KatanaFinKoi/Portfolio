@@ -42,22 +42,29 @@ const Contact: React.FC = () => {
     setErrors({ ...errors, [e.target.name]: "" }); // Clear errors on input change
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (validateForm()) {
-      const form = e.target as HTMLFormElement;
+        try {
+            const response = await fetch('/.netlify/functions/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
 
-      // Netlify form submission
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(new FormData(form) as any).toString(),
-      })
-        .then(() => alert("Form submitted successfully!"))
-        .catch((error) => alert("Error submitting form: " + error));
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setFormData({ name: '', email: '', message: '' }); // Reset the form
+            } else {
+                alert('Failed to send message. Try again.');
+            }
+        } catch (error) {
+            alert('Error sending message: ' +error);
+        }
     }
-  };
+};
+
 
   return (
     <div className="pages">
