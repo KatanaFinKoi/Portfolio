@@ -47,18 +47,17 @@ const Contact: React.FC = () => {
 
     if (validateForm()) {
         try {
-            const response = await fetch('../../../netlify/functions/send-email.js', {
+              const response = await fetch('/.netlify/functions/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                alert('Message sent successfully!');
-                setFormData({ name: '', email: '', message: '' }); // Reset the form
-            } else {
-                alert('Failed to send message. Try again.');
-            }
+              });
+              if (response.ok) {
+                  alert('Message sent successfully!');
+                  setFormData({ name: '', email: '', message: '' }); // Reset the form
+              } else {
+                  alert('Failed to send message. Try again.');
+              }
         } catch (error) {
             alert('Error sending message: ' +error);
         }
@@ -72,11 +71,8 @@ const Contact: React.FC = () => {
         <form
         name="contact"
         method="POST"
-        data-netlify="true"
         onSubmit={handleSubmit}
         >
-        {/* Required for Netlify */}
-        <input type="hidden" name="form-name" value="contact" />
 
         <label htmlFor="name">Name:</label>
         <input
