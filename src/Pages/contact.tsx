@@ -47,7 +47,7 @@ const Contact: React.FC = () => {
 
     if (validateForm()) {
         try {
-            const response = await fetch('../../netlify/functions/send-email.js', {
+            const response = await fetch('../../../netlify/functions/send-email.js', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
