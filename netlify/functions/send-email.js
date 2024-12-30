@@ -1,7 +1,6 @@
 import { setApiKey, send } from '@sendgrid/mail';
 
 export async function handler(event) {
-    // Check for HTTP POST method
     if (event.httpMethod !== 'POST') {
         return {
             statusCode: 405,
@@ -9,15 +8,24 @@ export async function handler(event) {
         };
     }
 
-    setApiKey(process.env.SENDGRID_API_KEY);
+    const sendGridApiKey = process.env.SENDGRID_API_KEY;
 
-    // Parse the request body
+    if (!sendGridApiKey) {
+        console.error('SendGrid API key is missing.');
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ error: 'SendGrid API key is not configured' }),
+        };
+    }
+
+    setApiKey(sendGridApiKey);
+
     const { name, email, message } = JSON.parse(event.body);
 
     const emailContent = {
-        to: 'liam.rayback@gmail.com', // Replace with your email address
-        from: 'liam.rayback@gmail.com', // Replace with your verified SendGrid sender email
-        subject: 'New portfolio Form Submission',
+        to: 'liam.rayback@gmail.com',
+        from: 'liam.rayback@gmail.com',
+        subject: 'New Portfolio Form Submission',
         text: `You have a new message from your portfolio contact form:
         
         Name: ${name}
@@ -32,10 +40,10 @@ export async function handler(event) {
             body: JSON.stringify({ message: 'Email sent successfully!' }),
         };
     } catch (error) {
-        console.error('Error sending email:', error);
+        console.error('Error sending email:', error.response?.body || error.message);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: 'Failed to send email' }),
+            body: JSON.stringify({ error: 'Failed to send email', details: error.response?.body || error.message }),
         };
     }
 }
