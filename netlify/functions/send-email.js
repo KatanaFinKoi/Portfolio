@@ -23,6 +23,8 @@ const sendEmail = async function handler(event) {
     const { name, email, message } = JSON.parse(event.body);
 
     const emailContent = {
+        headers: {"netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET,},
+        method: 'POST',
         to: 'liam.rayback@gmail.com',
         from: 'liam.rayback@gmail.com',
         subject: 'New Portfolio Form Submission',
