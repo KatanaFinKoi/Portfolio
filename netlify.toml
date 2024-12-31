@@ -2,7 +2,7 @@
   package = "@netlify/plugin-emails"
 
 [functions]
-directory = "netlify/functions"
+directory = "src/netlify/functions"
 
 [build]
   environment = { NODE_VERSION = "18" }
