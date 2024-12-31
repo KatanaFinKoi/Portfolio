@@ -1,6 +1,6 @@
 import { setApiKey, send } from '@sendgrid/mail';
 
-const sendEmail = async function handler(event) {
+const sendEmail = async function handler(event: { body: string | null; }) {
     if (event.body !== null) {
         return {
             statusCode: 405,
@@ -20,19 +20,19 @@ const sendEmail = async function handler(event) {
 
     setApiKey(sendGridApiKey);
 
-    const { name, email, message } = JSON.parse(event.body);
+    const { name, email, message } = JSON.parse(event.body || '{}');
 
     const emailContent = {
-        headers: {"netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET,},
+        headers: { "netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET || "" },
         method: 'POST',
         to: 'liam.rayback@gmail.com',
         from: 'liam.rayback@gmail.com',
         subject: 'New Portfolio Form Submission',
         text: `You have a new message from your portfolio contact form:
-        
-        Name: ${name}
-        Email: ${email}
-        Message: ${message}`,
+            
+            Name: ${name}
+            Email: ${email}
+            Message: ${message}`,
     };
 
     try {
@@ -42,10 +42,10 @@ const sendEmail = async function handler(event) {
             body: JSON.stringify({ message: 'Email sent successfully!' }),
         };
     } catch (error) {
-        console.error('Error sending email:', error.response?.body || error.message);
+        console.error('Error sending email:', error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: 'Failed to send email', details: error.response?.body || error.message }),
+            body: JSON.stringify({ error: 'Failed to send email', details: error }),
         };
     }
 }
