@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     message: "",
   });
 
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = React.useState({
     name: "",
     email: "",
     message: "",
@@ -47,9 +47,8 @@ const Contact: React.FC = () => {
 
     if (validateForm()) {
         try {
-              const response = await fetch('/.netlify/functions/send-email', {
+              const response = await fetch('./.netlify/functions/send-email', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
               });
               if (response.ok) {
@@ -58,55 +57,54 @@ const Contact: React.FC = () => {
               } else {
                   alert('Failed to send message. Try again.');
               }
-        } catch (error) {
-            alert('Error sending message: ' +error);
-        }
-    }
-};
+            } catch (error) {
+                alert('Error sending message: ' +error);
+            }
+          }
+        };
 
+        return (
+          <div className="pages">
+              <h3 className = "contact-header">Contact</h3>
+              <form
+              name="contact"
+              method="POST"
+              onSubmit={handleSubmit}
+              >
 
-  return (
-    <div className="pages">
-        <h3 className = "contact-header">Contact</h3>
-        <form
-        name="contact"
-        method="POST"
-        onSubmit={handleSubmit}
-        >
+              <label htmlFor="name">Name:</label>
+              <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+              />
+              {errors.name && <span className="error">{errors.name}</span>}
 
-        <label htmlFor="name">Name:</label>
-        <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-        />
-        {errors.name && <span className="error">{errors.name}</span>}
+              <label htmlFor="email">Email:</label>
+              <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+              />
+              {errors.email && <span className="error">{errors.email}</span>}
 
-        <label htmlFor="email">Email:</label>
-        <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
+              <label htmlFor="message">Message:</label>
+              <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+              />
+              {errors.message && <span className="error">{errors.message}</span>}
 
-        <label htmlFor="message">Message:</label>
-        <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-        />
-        {errors.message && <span className="error">{errors.message}</span>}
-
-        <button type="submit">Send</button>
-        </form>
-    </div>
-  );
-};
+              <button type="submit">Send</button>
+              </form>
+          </div>
+        );
+      };
 
 export default Contact;
