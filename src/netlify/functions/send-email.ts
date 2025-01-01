@@ -13,8 +13,8 @@ exports.handler = async (event: { body: string; }) => {
     const { name, email, message } = JSON.parse(event.body);
 
     const msg = {
-      to: 'your-email@example.com', // Replace with your email address
-      from: 'your-sendgrid-verified-sender@example.com', // Replace with a verified sender
+      to: 'liam.rayback@gmail.com', // Replace with your email address
+      from: 'liam.rayback@gmail.com', // Replace with a verified sender
       subject: `Contact Form Submission from ${name}`,
       text: `You received a message from ${name} (${email}):\n\n${message}`,
     };
