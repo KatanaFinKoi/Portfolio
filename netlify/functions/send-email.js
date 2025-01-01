@@ -8,7 +8,7 @@ if (!sendgridApiKey) {
 
 sgMail.setApiKey(sendgridApiKey);
 
-exports.handler = async (event: { body: string; }) => {
+exports.handler = async (event) => {
   try {
     const { name, email, message } = JSON.parse(event.body);
 
