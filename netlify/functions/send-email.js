@@ -6,6 +6,7 @@ if (!sendgridApiKey) {
   throw new Error('SENDGRID_API_KEY is not defined.');
 }
 
+
 sgMail.setApiKey(sendgridApiKey);
 
 exports.handler = async (event) => {
