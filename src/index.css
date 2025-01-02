@@ -207,6 +207,31 @@ button:focus-visible {
   padding: 0 0 50px 0;
 }
 
+.ReadMe-Gen {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 1;
+  grid-row: 3;
+  padding: 0 0 50px 0;
+}
+
+.Vehicle-Builder {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 2;
+  grid-row: 3;
+  padding: 0 0 50px 0;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 0px; /* Space between projects */
+  padding: 0px;
+}
+
 .github-link,
 .deployed-link {
   cursor: pointer;

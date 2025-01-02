@@ -10,6 +10,7 @@ const Navigation = () => {
     <div className = "nav">
       <button onClick={() => navigate("/aboutMe")}>About Me</button>
       <button onClick={() => navigate("/portfolio")}>Portfolio</button>
+      <button onClick={() => navigate("/gallery")}>Gallery</button>
       <button onClick={() => navigate("/contact")}>Contact</button>
       <button onClick={() => navigate("/resume")}>Resume</button>
     </div>

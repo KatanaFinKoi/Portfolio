@@ -127,6 +127,90 @@ const Portfolio = () => {
                 </div>
             </div>
 
+            <div className = "ReadMe-Gen">
+                <h4>ReadMe.Gen</h4>
+                <div
+                    className="portfolio-screenshot"
+                    style={{
+                        backgroundImage: `url('/ReadMe.Gen.screenshot.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '400px', // Adjust dimensions as needed
+                        height: '300px', // Adjust dimensions as needed
+                        position: 'relative',
+                    }}
+                    >
+                    <a
+                        className="portfolio-links"
+                        href="https://github.com/KatanaFinKoi/ReadMe.Generator"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        left: '10px',
+                        }}
+                    >
+                        <button className="github-link">GitHub</button>
+                    </a>
+                    <a 
+                        className="portfolio-links"
+                        href="https://demoair.wondershare.com/video/share?id=d6a8d070-227b-425a-81c1-cf65e9c81cf2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        }}
+                    >
+                        <button className="deployed-link">Walkthrough</button>
+                    </a>
+                </div>
+            </div>
+
+            <div className = "Vehicle-Builder">
+                <h4>Vehicle Builder</h4>
+                <div
+                    className="portfolio-screenshot"
+                    style={{
+                        backgroundImage: `url('/Vehicle-Builder-Screenshot.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '400px', // Adjust dimensions as needed
+                        height: '300px', // Adjust dimensions as needed
+                        position: 'relative',
+                    }}
+                    >
+                    <a
+                        className="portfolio-links"
+                        href="https://github.com/KatanaFinKoi/Vehicle-Builder-test"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        left: '10px',
+                        }}
+                    >
+                        <button className="github-link">GitHub</button>
+                    </a>
+                    <a 
+                        className="portfolio-links"
+                        href="https://demoair.wondershare.com/dashboard/video/share?id=8bf4a80d-0ceb-40da-a05c-085bb3a584c5"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        }}
+                    >
+                        <button className="deployed-link">Walkthrough</button>
+                    </a>
+                </div>
+            </div>
+
         </div>
     );
 }

@@ -4,6 +4,7 @@ import AboutMe from './Pages/aboutMe'
 import Contact from './Pages/contact'
 import Portfolio from './Pages/portfolio'
 import Resume from './Pages/resume'
+import Gallery from './Pages/gallery'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: '/resume',
         element: <Resume />
       },
+      {
+        path: '/gallery',
+        element: <Gallery />
+      }
     ]
   }
 ]);

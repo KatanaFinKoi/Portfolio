@@ -5,6 +5,7 @@ import AboutMe from './Pages/aboutMe'
 import Contact from './Pages/contact'
 import Portfolio from './Pages/portfolio'
 import Resume from './Pages/resume'
+import Gallery from './Pages/gallery'
 import './index.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
     </div>
