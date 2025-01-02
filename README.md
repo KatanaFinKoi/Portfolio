@@ -31,7 +31,7 @@ Welcome to my portfolio project! This is a comprehensive showcase of my work, sk
 
 ## **About Me**
 
-I am a passionate and dedicated software developer with a strong focus on creating user-friendly, functional, and visually appealing applications. My experience spans a variety of technologies, including **React**, **TypeScript**, **Node.js**, and **CSS**, with a particular interest in front-end development. Beyond coding, I have a background in customer service and IT internships, which has honed my skills in communication and collaboration.
+I am a passionate and dedicated software developer with a strong focus on creating user-friendly, functional, and visually appealing applications. My experience spans a variety of technologies, including **React**, **TypeScript**, **Node.js**, and **CSS**, and more with a particular interest in front-end development. Beyond coding, I have a background in customer service and IT internships, which has honed my skills in communication and collaboration.
 
 ---
 
@@ -68,7 +68,7 @@ This section includes a contact form for reaching out directly:
   - Required field validation.
   - Email validation with real-time error notifications.
 
-To contact me, fill out the form on the deployed portfolio or use the provided email notifications.
+To contact me, fill out the form on the deployed portfolio.
 
 ---
 
@@ -85,5 +85,6 @@ This portfolio is built using:
 - **React** **TypeScript** and **Vite** for dynamic and type-safe UI development.
 - **CSS** for responsive design and styling.
 - **Netlify** for deployment and form handling.
+- **Sendgrid API** for backend contact form submission and email handling. 
 
 Thank you for taking the time to explore my portfolio! Feel free to reach out through the contact form or connect with me via my social links.
