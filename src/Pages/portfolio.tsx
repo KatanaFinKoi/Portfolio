@@ -211,6 +211,48 @@ const Portfolio = () => {
                 </div>
             </div>
 
+            <div className = "github-candidate-search">
+                <h4>Candidate Search</h4>
+                <div
+                    className="portfolio-screenshot"
+                    style={{
+                        backgroundImage: `url('/candidate-search-screenshot.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '400px', // Adjust dimensions as needed
+                        height: '300px', // Adjust dimensions as needed
+                        position: 'relative',
+                    }}
+                    >
+                    <a
+                        className="portfolio-links"
+                        href="https://github.com/KatanaFinKoi/Github-Candidate-Search"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        left: '10px',
+                        }}
+                    >
+                        <button className="github-link">GitHub</button>
+                    </a>
+                    <a 
+                        className="portfolio-links"
+                        href="https://github-candidate-search-uu3x.onrender.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        }}
+                    >
+                        <button className="deployed-link">Deployed</button>
+                    </a>
+                </div>
+            </div>
+
         </div>
     );
 }

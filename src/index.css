@@ -226,6 +226,15 @@ button:focus-visible {
   padding: 0 0 50px 0;
 }
 
+.github-candidate-search {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 3;
+  grid-row: 3;
+  padding: 0 0 50px 0;
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
