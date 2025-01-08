@@ -159,6 +159,18 @@ button:focus-visible {
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-logo-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-text {
+  margin-top: 10px;
+  color: #242424;
 }
 
 
