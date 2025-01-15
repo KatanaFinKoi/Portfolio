@@ -10,23 +10,28 @@ const Resume = () => {
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>PostgreSQL</li>
                     <li>TypeScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>PostgreSQL</li>
                 </ol>
             </div>
             <div>
                 <h4>Application Proficiencies</h4>
                 <ol>
+                    <li>Render</li>
+                    <li>Firebase</li>
                     <li>VS Code</li>
                     <li>GitHub</li>
                     <li>Chrome dev tools</li>
                     <li>Insomnia</li>
-                    <li>Computer terminal</li>
-                    <li>Firebase</li>
-                    <li>Image editing software</li>
+                    <li>Terminal</li>
+                    <li>Image manipulation software</li>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>GIMP</li>
+                        </ul>
                 </ol>
             </div>
             <div>
