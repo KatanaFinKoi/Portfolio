@@ -307,7 +307,7 @@ ul {
   width: auto;
   max-width: 100%;
   object-fit: cover;
-  border: 5px solid #ff0000;
+  border: 5px solid rgba(255, 0, 0, 0.6);
 }
 
 .description {
