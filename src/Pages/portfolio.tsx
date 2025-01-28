@@ -30,7 +30,7 @@ const Portfolio = () => {
                     </a>
                     <a 
                         className="portfolio-links"
-                        href="vinyl-vault.up.railway.app"
+                        href="https://vinyl-vault.up.railway.app"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
