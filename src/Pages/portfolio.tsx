@@ -211,7 +211,7 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div className = "github-candidate-search">
+            {/* <div className = "github-candidate-search">
                 <h4>Candidate Search</h4>
                 <div
                     className="portfolio-screenshot"
@@ -251,7 +251,7 @@ const Portfolio = () => {
                         <button className="deployed-link">Deployed</button>
                     </a>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     );
