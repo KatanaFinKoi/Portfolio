@@ -307,13 +307,13 @@ ul {
   width: auto;
   max-width: 100%;
   object-fit: cover;
-  border: 5px solid rgba(255, 0, 0, 0.6);
+  border: 5px solid rgba(255, 0, 0, 0.5);
 }
 
 .description {
   margin-top: 30px;
   padding: 30px 10px; /* Add space inside the box */
-  background-color: rgb(238, 110, 255); /* Set the purple background */
+  background-color: rgba(238, 110, 255, 0.8); /* Set the purple background */
   color: black; /* Set the text color to black */
   border-radius: 10px; /* Rounded corners */
   font-weight: 500;
@@ -345,6 +345,11 @@ ul {
 
 #batman {
   grid-column: 1;
+  grid-row: 3;
+}
+
+#elspeth {
+  grid-column: 2;
   grid-row: 3;
 }
 
