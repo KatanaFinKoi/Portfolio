@@ -52,6 +52,16 @@ const Gallery = () => {
                 fit together. I then blurred the city background and added styling to the image to make it look more like a comic book.
               </p>
             </div>
+
+            <div className="artwork-piece" id="elspeth">
+              <img
+                src="Elspeth-Forrest-FAQ-flyer.jpg"
+                alt="FAQ flyer for Elspeth and Forrest's wedding"
+              />
+              <p className="description">For this project I created a flyer for Elspeth and Forrest's wedding. I added a picturen of them, the questions
+                and answers for the FAQ, and multiple clipart images. I then formatted everything to look like a professional flyer.
+              </p>
+            </div>
           </div>
         </div>
       </div>
