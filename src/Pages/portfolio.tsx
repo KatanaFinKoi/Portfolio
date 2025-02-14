@@ -44,6 +44,48 @@ const Portfolio = () => {
                 </div>
             </div>
 
+            <div className = "task-flow">
+                <h4>Task Flow</h4>
+                <div
+                    className="portfolio-screenshot"
+                    style={{
+                        backgroundImage: `url('/task-flow.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        width: '400px', // Adjust dimensions as needed
+                        height: '300px', // Adjust dimensions as needed
+                        position: 'relative',
+                    }}
+                    >
+                    <a
+                        className="portfolio-links"
+                        href="https://github.com/anton10mata/TaskFlow"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        left: '10px',
+                        }}
+                    >
+                        <button className="github-link">GitHub</button>
+                    </a>
+                    <a 
+                        className="portfolio-links"
+                        href="https://taskflow-est2025.up.railway.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                        position: 'absolute',
+                        bottom: '10px',
+                        right: '10px',
+                        }}
+                    >
+                        <button className="deployed-link">Deployed</button>
+                    </a>
+                </div>
+            </div>
+
             <div className = "dead-by-daylight">
             <h4>Dead By Daylight</h4>
                 <div
