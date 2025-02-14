@@ -202,11 +202,20 @@ button:focus-visible {
   padding: 0 0 50px 0;
 }
 
-.dead-by-daylight {
+.task-flow {
   display: flex;
   flex-direction: column; /* Stack title, image, and links vertically */
   align-items: center; /* Center items */
   grid-column: 2;
+  grid-row: 2;
+  padding: 0 0 50px 0;
+}
+
+.dead-by-daylight {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 3;
   grid-row: 2;
   padding: 0 0 50px 0;
 }
@@ -215,21 +224,12 @@ button:focus-visible {
   display: flex;
   flex-direction: column; /* Stack title, image, and links vertically */
   align-items: center; /* Center items */
-  grid-column: 3;
-  grid-row: 2;
-  padding: 0 0 50px 0;
-}
-
-.ReadMe-Gen {
-  display: flex;
-  flex-direction: column; /* Stack title, image, and links vertically */
-  align-items: center; /* Center items */
   grid-column: 1;
   grid-row: 3;
   padding: 0 0 50px 0;
 }
 
-.Vehicle-Builder {
+.ReadMe-Gen {
   display: flex;
   flex-direction: column; /* Stack title, image, and links vertically */
   align-items: center; /* Center items */
@@ -238,12 +238,21 @@ button:focus-visible {
   padding: 0 0 50px 0;
 }
 
-.github-candidate-search {
+.Vehicle-Builder {
   display: flex;
   flex-direction: column; /* Stack title, image, and links vertically */
   align-items: center; /* Center items */
   grid-column: 3;
   grid-row: 3;
+  padding: 0 0 50px 0;
+}
+
+.github-candidate-search {
+  display: flex;
+  flex-direction: column; /* Stack title, image, and links vertically */
+  align-items: center; /* Center items */
+  grid-column: 1;
+  grid-row: 4;
   padding: 0 0 50px 0;
 }
 
