@@ -7,14 +7,17 @@ const Resume = () => {
             <div>
                 <h4>Technical Proficiencies</h4>
                 <ol>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
                     <li>React.js</li>
+                    <li>React Native</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>Tailwind</li>
+                    <li>Nativewind</li>
                     <li>Node.js</li>
                     <li>Express.js</li>
                     <li>PostgreSQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                 </ol>
             </div>
             <div>
@@ -22,9 +25,9 @@ const Resume = () => {
                 <ol>
                     <li>Render</li>
                     <li>Firebase</li>
-                    <li>VS Code</li>
-                    <li>GitHub</li>
-                    <li>Chrome dev tools</li>
+                    <li>Xcode</li>
+                    <li>Android Studio</li>
+                    <li>Web dev tools</li>
                     <li>Insomnia</li>
                     <li>Terminal</li>
                     <li>Image manipulation software</li>
