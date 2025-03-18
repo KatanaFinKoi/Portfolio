@@ -179,9 +179,10 @@ button:focus-visible {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  gap: 0px; /* Space between projects */
+  gap: 10px; /* Space between projects */
   padding: 0px;
 }
+
 
 .portfolio-title {
   text-align: center;
@@ -256,13 +257,6 @@ button:focus-visible {
   padding: 0 0 50px 0;
 }
 
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  gap: 0px; /* Space between projects */
-  padding: 0px;
-}
-
 .github-link,
 .deployed-link {
   cursor: pointer;
@@ -298,24 +292,25 @@ ul {
   text-align: center;
 } */
 
+
+
+
 .artwork {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .artwork-piece {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
 .artwork-piece img {
   height: 500px; 
-  width: auto;
   max-width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
   border: 5px solid rgba(255, 0, 0, 0.5);
 }
 
@@ -364,15 +359,258 @@ ul {
 
 
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Media queries for responsive design */
+
+@media screen and (max-width: 1600px) {
+  .artwork {
+    gap: 25px;
   }
-  a:hover {
-    color: #747bff;
+  .pages {
+    padding: 50px;
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .artwork-piece img {
+    height: 400px; 
+    max-width: 100%;
+    /* object-fit: cover; */
+    border: 5px solid rgba(255, 0, 0, 0.5);
+  }
+
+  .portfolio-screenshot {
+    width: 300px;
+    height: auto;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-title {
+    grid-column: 1 / 3;
+  }
+  
+  .vinyl-vault {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .task-flow {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .dead-by-daylight {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  .mark-warner {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  .ReadMe-Gen {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  .Vehicle-Builder {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  
+  .github-candidate-search {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pages {
+    padding: 50px 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .artwork-piece img {
+    height: 350px;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .resume-page {
+    padding: 0 30vw;
+  }
+
+  .artwork {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .artwork-piece img {
+    height: 500px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  #artwork-header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  
+  #jonathan {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #phasmophobia {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  #lucio {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #batman {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  #elspeth {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-title {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 30px 0;
+  }
+  
+  .vinyl-vault, 
+  .task-flow, 
+  .dead-by-daylight,
+  .mark-warner,
+  .ReadMe-Gen,
+  .Vehicle-Builder,
+  .github-candidate-search {
+    grid-column: 1;
+  }
+
+  .vinyl-vault { grid-row: 2; }
+  .task-flow { grid-row: 3; }
+  .dead-by-daylight { grid-row: 4; }
+  .mark-warner { grid-row: 5; }
+  .ReadMe-Gen { grid-row: 6; }
+  .Vehicle-Builder { grid-row: 7; }
+  .github-candidate-search { grid-row: 8; }
+
+  .nav {
+    gap: 0.5rem;
+  }
+  
+  .header {
+    padding: 50px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav {
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Adjust buttons for tablets/smaller screens */
   button {
-    background-color: #f9f9f9;
+    padding: 1em;
+    font-size: 0.9em;
   }
-} */
+  
+  /* Adjust page content padding */
+  .pages {
+    padding: 30px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Tablet-specific adjustments */
+
+  .artwork {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: auto;
+    height: auto; 
+  }
+  
+  /* Keep original image size but ensure it fits container */
+  .artwork-piece img {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: auto;
+    height: auto; 
+    min-height: auto; 
+    max-height: 350px;
+    max-width: 100%;
+  }
+  
+  #artwork-header,
+  #jonathan, 
+  #phasmophobia, 
+  #lucio,
+  #batman,
+  #elspeth {
+    grid-column: 1;
+  }
+  
+  #artwork-header { grid-row: 1; }
+  #jonathan { grid-row: 2; }
+  #phasmophobia { grid-row: 3; }
+  #lucio { grid-row: 4; }
+  #batman { grid-row: 5; }
+  #elspeth { grid-row: 6; }
+}
+
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for mobile screens */
+  .nav {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+  }
+  
+  button {
+    padding: 0.8em;
+    font-size: 0.85em;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  a {
+    font-size: 18px;
+  }
+  
+  
+  .pages {
+    padding: 20px 15px;
+  }
+  
+  h1 { font-size: 40px; }
+  h2 { font-size: 35px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 22px; }
+  p { font-size: 18px; }
+}
+
