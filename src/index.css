@@ -443,6 +443,10 @@ ul {
 }
 
 @media screen and (max-width: 900px) {
+  .resume-page {
+    padding: 0 30vw;
+  }
+
   .artwork {
     grid-template-columns: repeat(2, 1fr);
   }
