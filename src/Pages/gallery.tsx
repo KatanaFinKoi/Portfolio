@@ -1,4 +1,17 @@
+import { useState } from 'react';
+
 const Gallery = () => {
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const openLightbox = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
     return (
       <div className="pages">
         <h1>Image Manipulation Gallery</h1>
@@ -10,6 +23,8 @@ const Gallery = () => {
               <img
                 src="/Jonathan-card.jpg"
                 alt="Jonathan the Debator a Magic the Gathering card"
+                onClick={() => openLightbox("/Jonathan-card.jpg")}
+                className="clickable-image"
               />
               <p className="description">For this project, I took a blank card canvas and turned Jonathan into a Magic the Gathering card. I added his
                 picture into the card, and added the card's name, type, and abilities. I also added the card's mana cost and power/toughness. To add the mana
@@ -22,6 +37,8 @@ const Gallery = () => {
               <img
                 src="/Phasmophobia-demon-art-lower-quality.jpg"
                 alt="Phasmophobia demon art"
+                onClick={() => openLightbox("/Phasmophobia-demon-art-lower-quality.jpg")}
+                className="clickable-image"
               />
               <p className="description">For this project I touched up a piece of artwork from the internet to make it look crisp and clear.
                 I added some lighting effects to make it look more dramatic. I then cut out the Phasmophobia official logo and pasted it up top,
@@ -34,6 +51,8 @@ const Gallery = () => {
               <img
                 src="/lucio-ohs-lower-quality.jpg"
                 alt="Lucio from Overwatch holding a box of Lucio-ohs cereal"
+                onClick={() => openLightbox("/lucio-ohs-lower-quality.jpg")}
+                className="clickable-image"
               />
               <p className="description">This piece includes an artwork of Lucio from the video game Overwatch. I added the text and 
                 the styled border around it. I also had to cut out the box of lucio-oh's cereal from another image and add it into lucio's hand.
@@ -46,6 +65,8 @@ const Gallery = () => {
               <img
                 src="batman-final-lower-quality.jpg"
                 alt="Batman in a comic book style"
+                onClick={() => openLightbox("batman-final-lower-quality.jpg")}
+                className="clickable-image"
               />
               <p className="description">For this image i cut out the image of batman on the little tower from another image and added him into an image
                 of the city. To make it look natural I had to extremely modify the lighting, color, saturation and contrast of the two images to make them
@@ -57,12 +78,22 @@ const Gallery = () => {
               <img
                 src="Elspeth-Forrest-FAQ-flyer.jpg"
                 alt="FAQ flyer for Elspeth and Forrest's wedding"
+                onClick={() => openLightbox("Elspeth-Forrest-FAQ-flyer.jpg")}
+                className="clickable-image"
               />
               <p className="description">For this project I created a flyer for Elspeth and Forrest's wedding. I added a picturen of them, the questions
                 and answers for the FAQ, and multiple clipart images. I then formatted everything to look like a professional flyer.
               </p>
             </div>
           </div>
+          {selectedImage && (
+          <div className="lightbox-overlay" onClick={closeLightbox}>
+            <div className="lightbox-content">
+              <img src={selectedImage} alt="Enlarged artwork" />
+              <button className="close-button" onClick={closeLightbox}>×</button>
+            </div>
+          </div>
+        )}
         </div>
       </div>
     );
