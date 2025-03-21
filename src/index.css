@@ -242,8 +242,6 @@ button:focus-visible {
 }
 
 
-
-/* Container for all projects */
 .portfolio {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
