@@ -284,7 +284,6 @@ button:focus-visible {
   grid-row: 1;
 }
 
-/* Portfolio screenshot and buttons styling */
 .portfolio-screenshot {
   background-size: cover;
   background-position: center;
@@ -292,7 +291,7 @@ button:focus-visible {
   height: 300px;
   position: relative;
   transition: transform 0.2s, filter 0.2s;
-  margin: 0 auto; /* Center the screenshot */
+  margin: 0 auto; 
 }
 
 .portfolio-screenshot:hover {
@@ -300,9 +299,8 @@ button:focus-visible {
   filter: brightness(1.1);
 }
 
-/* Correct positioning for buttons */
 .portfolio-links {
-  position: static; /* Remove absolute positioning from links */
+  position: static;
 }
 
 .github-link {
@@ -504,11 +502,6 @@ ul {
     border: 5px solid rgba(255, 0, 0, 0.5);
   }
 
-  .portfolio-screenshot {
-    width: 300px;
-    height: auto;
-  }
-
   .portfolio {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -620,12 +613,19 @@ ul {
   .portfolio {
     grid-template-columns: 1fr;
   }
+
+  .portfolio-screenshot {
+    width: 350px;
+    height: 262px; 
+  }
   
   .portfolio-title {
     grid-column: 1;
     grid-row: 1;
     padding: 30px 0;
   }
+
+
   
   .vinyl-vault, 
   .task-flow, 
@@ -735,6 +735,11 @@ ul {
   
   .pages {
     padding: 20px 15px;
+  }
+
+  .portfolio-screenshot {
+    width: 280px;
+    height: 210px; 
   }
   
   h1 { font-size: 40px; }
