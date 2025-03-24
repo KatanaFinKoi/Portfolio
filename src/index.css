@@ -53,10 +53,6 @@ a:hover {
   color: #ff0000;
 }
 
-.resume-link {
-  padding: 0;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
@@ -106,6 +102,23 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto #c290ff;
+}
+
+.submit-button-div {
+  padding: 20px 0;
+}
+
+.submit-button {
+  background-color: #5f5f5f;
+  color: rgb(255, 255, 255);
+  border: 3px solid #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#message {
+  height: 250px;
 }
 
 /* Clickable images */
@@ -170,8 +183,20 @@ button:focus-visible {
   background-color: rgba(255, 0, 0, 0.7);
 }
 
+.resume-link {
+  padding: 20px 0;
+  text-align: center;
+}
+
 .resume-page {
-  padding: 0 40vw;
+  padding: 50px 35vw;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c291ff;
 }
 
 .pages {
@@ -259,6 +284,51 @@ button:focus-visible {
   grid-row: 1;
 }
 
+/* Portfolio screenshot and buttons styling */
+.portfolio-screenshot {
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  transition: transform 0.2s, filter 0.2s;
+  margin: 0 auto; /* Center the screenshot */
+}
+
+.portfolio-screenshot:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+/* Correct positioning for buttons */
+.portfolio-links {
+  position: static; /* Remove absolute positioning from links */
+}
+
+.github-link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 5;
+}
+
+.deployed-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+.github-link,
+.deployed-link {
+  cursor: pointer;
+}
+
+.github-link:hover,
+.deployed-link:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+}
+
 /* Keep each project (title, image, and links) grouped together */
 .vinyl-vault {
   display: flex;
@@ -321,16 +391,6 @@ button:focus-visible {
   grid-column: 1;
   grid-row: 4;
   padding: 0 0 50px 0;
-}
-
-.github-link,
-.deployed-link {
-  cursor: pointer;
-}
-
-.github-link:hover,
-.deployed-link:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
 }
 
 .contact-header {
@@ -497,6 +557,10 @@ ul {
   .pages {
     padding: 50px 25px;
   }
+
+  .resume-page {
+    padding: 50px 30vw;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -510,7 +574,7 @@ ul {
 
 @media screen and (max-width: 900px) {
   .resume-page {
-    padding: 0 30vw;
+    padding: 50px 20vw;
   }
 
   .artwork {
