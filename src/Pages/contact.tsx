@@ -101,8 +101,9 @@ const Contact: React.FC = () => {
           onChange={handleChange}
         />
         {errors.message && <span className="error">{errors.message}</span>}
-
-        <button type="submit">Send</button>
+        <div className = "submit-button-div">
+          <button className = "submit-button" type="submit">Send</button>
+        </div>
       </form>
       {responseMessage && <div id="response">{responseMessage}</div>}
     </div>

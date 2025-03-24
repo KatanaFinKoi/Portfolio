@@ -31,7 +31,7 @@ const AboutMe = () => {
             various food pantries and homeless shelters has reinforced a sense of teamwork and responsibility, all of which contribute to 
             a well-rounded approach to software development.
             </p>
-            <img src="public/bootcamp-diploma.jpeg" 
+            <img src="bootcamp-diploma.jpeg" 
             alt="Liam Rayback holding his software development bootcamp diploma" 
             className = "clickable-image" 
             id="diploma"
