@@ -292,11 +292,91 @@ button:focus-visible {
   position: relative;
   transition: transform 0.2s, filter 0.2s;
   margin: 0 auto; 
+  overflow: hidden;
+}
+
+.portfolio-screenshot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
 }
 
 .portfolio-screenshot:hover {
   transform: scale(1.02);
   filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.portfolio-screenshot:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  z-index: 1; 
+}
+
+.description-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.readme-lightbox-overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.readme-lightbox-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 80%;
+  max-height: 80vh; 
+  overflow-y: auto; 
+  position: relative;
+  color: #333;
+  z-index: 1001; 
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1002;
 }
 
 .portfolio-links {
@@ -304,30 +384,26 @@ button:focus-visible {
 }
 
 .github-link {
-  position: absolute;
-  bottom: 10px;
   left: 10px;
-  z-index: 5;
 }
 
 .deployed-link {
-  position: absolute;
-  bottom: 10px;
   right: 10px;
-  z-index: 5;
 }
 
 .github-link,
 .deployed-link {
   cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
 }
 
 .github-link:hover,
 .deployed-link:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Keep each project (title, image, and links) grouped together */
 .vinyl-vault {
   display: flex;
   flex-direction: column; /* Stack title, image, and links vertically */
