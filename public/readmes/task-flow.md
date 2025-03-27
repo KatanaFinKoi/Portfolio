@@ -10,49 +10,25 @@ Join us now and experience the power of effortless event tracking, and be among 
 
 
 ## 🚀 Features  
-- **Minimalist Event Logging** – Quickly add events without hassle.  
-- **User Authentication** – Secure access using JWT.  
-- **Modern UI/UX** – Built with Tailwind CSS for a sleek and responsive experience.  
-- **GraphQL API** – Efficient and flexible data handling.  
-- **PostgreSQL Database** – Reliable data storage.  
-- **Deployed with Railway** – Ensuring smooth and scalable hosting.  
+**Minimalist Event Logging** – Quickly add events without hassle.  
+**User Authentication** – Secure access using JWT.  
+**Modern UI/UX** – Built with Tailwind CSS for a sleek and responsive experience.  
+**GraphQL API** – Efficient and flexible data handling.  
+**PostgreSQL Database** – Reliable data storage.  
+**Deployed with Railway** – Ensuring smooth and scalable hosting.  
 
 ## 🛠 Technologies Used  
-- **Frontend**: React, Vite, Tailwind CSS, JavaScript, HTML, CSS  
-- **Backend**: Node.js, Express, GraphQL, JWT Authentication  
-- **Database**: PostgreSQL  
-- **Deployment**: Railway  
-
-## 📦 Installation & Setup  
-
-1. **Clone the repository:**  
-   ```sh
-   git clone https://github.com/your-repo/taskflow.git
-   cd taskflow
-   ```  
-
-2. **Install dependencies:**  
-   ```sh
-   npm install
-   ```  
-
-3. **Set up environment variables:**  
-   Create a `.env` file in the root directory and configure the necessary variables (e.g., database URL, JWT secret).  
-
-4. **Run the development server:**  
-   ```sh
-   npm run dev
-   ```  
-   The app should now be running at `http://localhost:3000`.  
-
-5. **Start the backend server:**  
-   ```sh
-   npm run server
-   ```  
+**Frontend**: React, Vite, Tailwind CSS, JavaScript, HTML, CSS  
+**Backend**: Node.js, Express, GraphQL, JWT Authentication  
+**Database**: PostgreSQL  
+**Deployment**: Railway  
 
 ## 👥 Contributors  
-- **Liam Rayback**  
-- **Fabricio Laboriel**  
-- **Carlos Pastrana**  
-- **Antonio Mata**  
+**Liam Rayback**  
+**Fabricio Laboriel**  
+**Carlos Pastrana**  
+**Antonio Mata**  
 
+---
+
+"Stay Organized"
