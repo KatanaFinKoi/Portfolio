@@ -308,11 +308,11 @@ button:focus-visible {
   cursor: pointer;
 }
 
-.portfolio-screenshot:hover .portfolio-overlay {
+.portfolio-screenshot:hover .overlay {
   opacity: 1;
 }
 
-.portfolio-overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -561,6 +561,42 @@ ul {
 
 /* Media queries for responsive design */
 
+@media (hover: none) {
+  .portfolio-screenshot:active {
+    animation: touch-pulse 0.3s;
+  }
+
+  .overlay {
+    opacity: 0;
+  }
+  
+  @keyframes touch-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.98); }
+    100% { transform: scale(1); }
+  }
+
+  .overlay {
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px); 
+  }
+
+  .description-text {
+    color: white;
+    font-size: 18px; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: 500; 
+    text-shadow: none; 
+    max-width: 80%; 
+    margin: 0 auto; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  }
+}
+
+
 @media screen and (max-width: 1600px) {
   .artwork {
     gap: 25px;
@@ -751,6 +787,27 @@ ul {
 
 @media screen and (max-width: 768px) {
   /* Tablet-specific adjustments */
+
+/* 
+  .overlay {
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(2px); 
+  }
+  
+
+  .description-text {
+    color: white;
+    font-size: 18px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-weight: 500; 
+    text-shadow: none; 
+    max-width: 80%; 
+    margin: 0 auto; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  } */
 
   .artwork {
     grid-template-columns: 1fr;
