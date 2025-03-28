@@ -66,7 +66,7 @@ const Portfolio = () => {
                         onClick={() => openReadme('vinyl-vault')}
 
                     >
-                        <div className="portfolio-overlay">
+                        <div className="overlay">
                             <span className="description-text">Click for project description</span>
                         </div>
                         <a
@@ -99,7 +99,7 @@ const Portfolio = () => {
                         }}
                         onClick={() => openReadme('task-flow')}
                     >
-                        <div className="portfolio-overlay">
+                        <div className="overlay">
                         <span className="description-text">Click for project description</span>                        </div>
                         <a
                             className="portfolio-links"
@@ -131,7 +131,7 @@ const Portfolio = () => {
                         }}
                         onClick={() => openReadme('dead-by-daylight')}
                     >
-                        <div className="portfolio-overlay">
+                        <div className="overlay">
                         <span className="description-text">Click for project description</span>                        </div>
                         <a
                             className="portfolio-links"
@@ -162,7 +162,7 @@ const Portfolio = () => {
                         }}
                         onClick={() => openReadme('mark-warner')}
                     >
-                        <div className="portfolio-overlay">
+                        <div className="overlay">
                         <span className="description-text">Click for project description</span>                        </div>
                         <a
                             className="portfolio-links"
@@ -194,7 +194,7 @@ const Portfolio = () => {
                         }}
                         onClick={() => openReadme('readme-gen')}
                     >
-                        <div className="portfolio-overlay">
+                        <div className="overlay">
                         <span className="description-text">Click for project description</span>                        </div>
                         <a
                             className="portfolio-links"
@@ -226,7 +226,7 @@ const Portfolio = () => {
                         }}
                         onClick={() => openReadme('vehicle-builder')}
                     >
-                        <div className="portfolio-overlay">
+                        <div className="overlay">
                         <span className="description-text">Click for project description</span>                        </div>
                         <a
                             className="portfolio-links"
