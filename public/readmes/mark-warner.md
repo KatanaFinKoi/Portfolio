@@ -28,5 +28,11 @@ Implement user authentication for verified story submissions.
 Allow users to upload photos along with their stories.  
 Improve UI/UX design for a more seamless experience.  
 
+## ✏️ Authors
+
+Liam Rayback
+
+---
+
 ## ❤️ Acknowledgments
 A special thank you to everyone contributing stories and memories to keep Mark Warner’s legacy alive. This project is dedicated to him and the people who love him.

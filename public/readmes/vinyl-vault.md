@@ -2,6 +2,10 @@
 
 A comprehensive vinyl collection tracker designed to help users organize and showcase their record collections. Vinyl Vault provides detailed record information such as the artist, album, release date, and more. This application leverages modern technologies and APIs to deliver an intuitive and seamless experience.
 
+## ✍🏻 Contributions
+
+My contributions included implementing the sign-in functionality, resolving API integration bugs, updating the codebase for live deployment, and playing a key role in debugging and refining the app in the final stretch to ensure it was fully functional for our presentation.
+
 ## 🔦 Features
 
 Add and manage your vinyl collection effortlessly.  

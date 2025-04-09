@@ -14,3 +14,7 @@ This project allows you to create a vehicle or select an existing one from a lis
 **Node.js:** To power the backend and CLI functionality.  
 **Inquirer.js:** For user-friendly command-line prompts.  
 **Object-Oriented Programming (OOP):** Classes and methods structure the vehicle logic.  
+
+## ✏️ Authors
+
+Liam Rayback
