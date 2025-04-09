@@ -35,6 +35,10 @@ Visualize the terror and beauty of *Dead by Daylight* with a curated gallery of:
 **CSS**: For styling and visual enhancements.  
 **JavaScript** For logic to diplay the back to top button correctly  
 
+## ✏️ Authors
+
+Liam Rayback
+
 
 ---
 

@@ -8,6 +8,9 @@ While currently focused on core event logging, TaskFlow is built on a flexible f
 
 Join us now and experience the power of effortless event tracking, and be among the first to benefit from the exciting enhancements to come.  
 
+## ✍🏻 Contributions
+
+I led front-end development and design, built the navigation bar, ensured all core components functioned smoothly, coordinated team efforts, and fixed numerous bugs to deliver a polished and fully working interface under tight deadlines.
 
 ## 🚀 Features  
 **Minimalist Event Logging** – Quickly add events without hassle.  
