@@ -56,6 +56,13 @@ const Portfolio = () => {
         <div className = "pages">
             <div className = "portfolio">
                 <h3 className = "portfolio-title">Portfolio</h3>
+                <div className = "guest-login">
+                    <div className = "guest-info">
+                        <p>Login as a guest</p>
+                        <p>Email: guest@email.com</p>
+                        <p>Password: guest</p>
+                    </div>
+                </div>
                 <div className = "vinyl-vault">
                     <h4>Vinyl Vault</h4>
                     <div
@@ -112,7 +119,7 @@ const Portfolio = () => {
                         </a>
                         <a 
                             className="portfolio-links"
-                            href="https://taskflow-est2025.up.railway.app/"
+                            href="https://task-flow-2.up.railway.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
