@@ -38,8 +38,8 @@ const AboutMe = () => {
             onClick={() => openLightbox("/bootcamp-diploma.jpeg")}
             />
             {selectedImage && (
-            <div className="lightbox-overlay" onClick={closeLightbox}>
-                <div className="lightbox-content">
+            <div className="diploma-lightbox-overlay" onClick={closeLightbox}>
+                <div className="diploma-lightbox-content">
                 <img src={selectedImage} alt="Enlarged artwork" />
                 <button className="close-button" onClick={closeLightbox}>×</button>
                 </div>

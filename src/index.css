@@ -1,3 +1,5 @@
+/* global styles */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -84,6 +86,11 @@ p {
   line-height: 1.5;
 }
 
+ul {
+  list-style-type: circle;
+  padding: 0 0 0 10px;
+}
+
 button {
   border-radius: 8px;
   border: 2px solid transparent;
@@ -121,46 +128,6 @@ button:focus-visible {
   height: 250px;
 }
 
-/* Clickable images */
-.clickable-image {
-  cursor: pointer;
-  transition: transform 0.2s, filter 0.2s;
-}
-
-.clickable-image:hover {
-  transform: scale(1.02);
-  filter: brightness(1.1);
-}
-
-/* Lightbox styles */
-.lightbox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.lightbox-content {
-  position: relative;
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.lightbox-content img {
-  max-width: 100%;
-  max-height: 90vh;
-  height: auto;
-  border: 5px solid rgba(255, 0, 0, 0.5);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-}
-
 .close-button {
   position: absolute;
   top: -20px;
@@ -179,6 +146,25 @@ button:focus-visible {
   justify-content: center;
 }
 
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1002;
+}
+
 .close-button:hover {
   background-color: rgba(255, 0, 0, 0.7);
 }
@@ -186,17 +172,6 @@ button:focus-visible {
 .resume-link {
   padding: 20px 0;
   text-align: center;
-}
-
-.resume-page {
-  padding: 50px 35vw;
-}
-
-.resume-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #c291ff;
 }
 
 .pages {
@@ -231,19 +206,6 @@ button:focus-visible {
   margin-left: auto;
 }
 
-.portrait {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  border: 7px solid #000000;
-}
-
-#diploma {
-  width: 400px;
-  height: auto;
-
-}
-
 .footer {
   margin: 0 auto;
   padding: 50px 25px;
@@ -266,6 +228,125 @@ button:focus-visible {
   color: #242424;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  z-index: 5; 
+  pointer-events: none;
+}
+
+.clickable-image {
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.image-container .clickable-image {
+  width: 100%;
+  height: auto;
+}
+
+.clickable-image:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 5;
+}
+
+.image-container .overlay .description-text {
+  color: white;
+  font-weight: 500;
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  text-align: center;
+  max-width: 80%;
+  font-size: 18px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* end global */
+
+
+/* about me styles */
+
+.portrait {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 7px solid #000000;
+}
+
+#diploma {
+  width: 400px;
+  height: auto;
+}
+
+.diploma-lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.diploma-lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.diploma-lightbox-content img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border: 3px solid white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* end about me */
+
+
+/* portfolio styles */
 
 .portfolio {
   display: grid;
@@ -273,7 +354,6 @@ button:focus-visible {
   gap: 10px; /* Space between projects */
   padding: 0px;
 }
-
 
 .portfolio-title {
   text-align: center;
@@ -317,9 +397,6 @@ button:focus-visible {
   transition: transform 0.2s, filter 0.2s;
   margin: 0 auto; 
   overflow: hidden;
-}
-
-.portfolio-screenshot {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -334,28 +411,6 @@ button:focus-visible {
 
 .portfolio-screenshot:hover .overlay {
   opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0; 
-  transition: opacity 0.3s ease;
-  z-index: 1; 
-}
-
-.description-text {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .readme-lightbox-overlay {
@@ -384,25 +439,6 @@ button:focus-visible {
   z-index: 1001; 
 }
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  z-index: 1002;
-}
-
 .portfolio-links {
   position: static;
 }
@@ -420,7 +456,8 @@ button:focus-visible {
   cursor: pointer;
   position: absolute;
   bottom: 10px;
-  z-index: 2;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .github-link:hover,
@@ -482,33 +519,107 @@ button:focus-visible {
   padding: 0 0 50px 0;
 }
 
-.contact-header {
+/* end portfolio styles */
+
+
+/* gallery styles */
+
+.comparison-lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.comparison-lightbox-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-title {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 24px;
+  color: #333;
 }
 
-ul {
-  list-style-type: circle;
-  padding: 0 0 0 10px;
+.image-comparison-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-/* .artwork {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+.original-image,
+.edited-image {
+  flex: 1;
+  min-width: 300px; /* Minimum width before wrapping */
 }
 
-.artwork-pieces {
-  height: 500px
-}
-
-#artwork-header {
-  grid-column: 1 / 4;
-  grid-row: 1;
+.original-image h4,
+.edited-image h4 {
   text-align: center;
-} */
+  margin-bottom: 10px;
+  color: #555;
+}
 
+.original-image img,
+.edited-image img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.placeholder-image {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: 60vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 
+.placeholder-image p {
+  color: #777;
+  font-style: italic;
+}
+
+.comparison-description {
+  margin-top: 20px;
+  padding: 30px 100px;
+  border-top: 1px solid #eee;
+  
+}
+
+.comparison-description p {
+  line-height: 1.5;
+  margin: 0;
+}
 
 .artwork {
   display: grid;
@@ -520,6 +631,13 @@ ul {
 
 .artwork-piece {
   align-items: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* 4:3 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .artwork-piece img {
@@ -529,7 +647,7 @@ ul {
   border: 5px solid rgba(255, 0, 0, 0.5);
 }
 
-.description {
+.artwork-description {
   margin-top: 30px;
   padding: 30px 10px; /* Add space inside the box */
   background-color: rgba(238, 110, 255, 0.8); /* Set the purple background */
@@ -573,16 +691,61 @@ ul {
 }
 
 
+/* end gallery */
+
+
+/* contact styles */
+
+.contact-header {
+  text-align: center;
+}
+
+/* end contact */
+
+
+/* resume styles */
+
+.resume-page {
+  padding: 50px 35vw;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c291ff;
+}
+
+/* end resume */
+
+
+
 
 /* Media queries for responsive design */
+
+@media (hover: hover) {
+  .image-container:hover .overlay {
+    opacity: 1; 
+  }
+  
+  .image-container:hover .clickable-image {
+    filter: brightness(0.7);
+    transform: scale(1.02);
+  }
+  
+  .clickable-image {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+}
 
 @media (hover: none) {
   .portfolio-screenshot:active {
     animation: touch-pulse 0.3s;
   }
 
-  .overlay {
-    opacity: 0;
+  .image-container:active .clickable-image {
+    filter: brightness(0.8);
+    transform: scale(0.98);
   }
   
   @keyframes touch-pulse {
@@ -591,10 +754,12 @@ ul {
     100% { transform: scale(1); }
   }
 
-  .overlay {
+  .image-container .overlay {
     opacity: 0.8;
     background-color: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(2px); 
+    align-items: flex-end;
+    pointer-events: none;
   }
 
   .description-text {
@@ -819,6 +984,27 @@ ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
   } */
 
+  .image-comparison-container {
+    flex-direction: column;
+  }
+  
+  .original-image img,
+  .edited-image img,
+  .placeholder-image {
+    max-height: 50vh;
+  }
+  
+  .original-image,
+  .edited-image {
+    min-width: 100%;
+  }
+  
+  .comparison-lightbox-content {
+    padding: 15px;
+    width: 95%;
+    max-height: 85vh;
+  }
+
   .artwork {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -833,8 +1019,8 @@ ul {
     width: auto;
     height: auto; 
     min-height: auto; 
-    max-height: 350px;
-    max-width: 100%;
+    height: 350px;
+    width: auto;
   }
   
   #artwork-header,
