@@ -151,7 +151,7 @@ const Portfolio = () => {
                         </a>
                         <a 
                             className="portfolio-links"
-                            href="https://katanafinkoi.github.io/Dead-by-Daylight-project/"
+                            href="https://katanafinkoi.github.io/Dead-By-Daylight2.0"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
